@@ -1,0 +1,810 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4F3; /* Overall background */
+    color: #000; /* Default text color */
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F4F4F3; /* Header background color */
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #000; /* Text color for the nav links */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Hover color */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4F4F3;
+    color: #000;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: flex-start; /* Align the content to the left */
+    align-items: center;
+    width: 100%;
+}
+
+.hero .intro {
+    flex: 2;
+    margin-right: 50px; /* Space between content and photo */
+}
+
+/* Hero Section - Photo */
+.hero .photo {
+    flex: 1; /* Takes up remaining space in the flex container */
+    height: 100%; /* Ensure it takes up the full height of the container */
+    width: 100%; /* Make sure it stretches to full width of the container */
+    position: relative; /* To position the image properly */
+    overflow: hidden; /* Hide overflow if needed */
+    border-radius: 0; /* Remove the curve (set to square/rectangular) */
+}
+
+.hero .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container area */
+    object-position: center; /* Ensures the image is centered */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Manrope', sans-serif; /* For your name */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #EC5C39; /* Your name color */
+}
+
+.hero .subtitle {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-style: normal; /* Italicize the subtitle */
+}
+
+/* Apply Nunito Sans font to the subtitle and paragraph text */
+.subtitle, p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic; /* Add italics */
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #000;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Resume Section */
+.resume-section {
+    margin-top: 20px;
+}
+
+.resume-section p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.resume-section .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-section .btn:hover {
+    background-color: #e55b00;
+}
+
+/* Quote Section */
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Adjust height to be a bit less than half the page */
+    background-color: #F4F4F3;
+    text-align: center;
+    margin-top: 50px; /* Reduced top margin */
+    padding: 40px 0;
+}
+
+/* Quote Container */
+.quote-container {
+    width: 80%;
+    max-width: 900px;
+    transition: transform 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.quote-container:hover {
+    transform: scale(1.05); /* Slight zoom effect when hovering */
+}
+
+/* Quote Title */
+.quote-title {
+    font-size: 2rem;
+    font-family: 'Manrope', sans-serif; /* For your name */
+    color: #EC5C39; /* Orange color */
+    margin-bottom: 20px;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.quote-title:hover {
+    color: #D85C30; /* Darker orange on hover */
+}
+
+/* Quote Paragraph */
+.quote-paragraph {
+    font-size: 1rem;
+    font-style: italic;
+    color: #000;
+    line-height: 1.8;
+}
+
+/* General Styles for Projects Section */
+.projects-section {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    font-family: 'Manrope', sans-serif;
+    color: #EC5C39;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+/* Horizontal Scrolling Container */
+.projects-container {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.projects-container::-webkit-scrollbar {
+    height: 12px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Individual Project Cards */
+.project-card {
+    flex: 0 0 30%;
+    width: 500px;
+    height: 350px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Front */
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #e26a49;
+    color: #ffffff;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.card-front h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.card-front p {
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Card Back */
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+    overflow-y: auto;
+    backface-visibility: hidden;
+    scrollbar-width: thin;
+}
+
+.card-back p {
+    font-size: 1rem;
+    line-height: 1.8;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Scrollbar Styling Inside Card Back */
+.card-back::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card-back::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.card-back::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Hover Effect */
+.project-card:hover .card-front {
+    opacity: 0;
+}
+
+.project-card:hover .card-back {
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        flex: 0 0 70%;
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        flex: 0 0 90%;
+        width: 90%;
+    }
+}
+
+/* Global Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F3;
+    margin: 0;
+    padding: 0;
+}
+
+
+#work-experience {
+    background-color: #F4F4F3;
+    padding: 50px 0;
+    position: relative;
+    height: 75vh; /* Adjusted height to move the section up */
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Manrope', sans-serif; /* For your name */
+    color: #EC5C39;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    z-index: 1; /* Default z-index for stacking */
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+    z-index: 2; /* Ensure hovered item stays on top */
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    z-index: 3; /* Ensure dot stays on top */
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.timeline-content h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.timeline-content span {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.job-description {
+    display: none;
+    padding: 15px 0;
+    color: #555;
+}
+
+.timeline-item:hover .job-description {
+    display: block;
+}
+
+.job-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.job-description ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Certificates Section */
+/* Certificates Section */
+.certificates-grid {
+    padding: 60px 10%;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.certificates-grid h2 {
+    font-size: 2.5rem;
+    font-family: 'Manrope', sans-serif;
+    color: #EC5C39;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Container for certificate cards */
+.certificates-container,
+.certificates-container-second-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: start; /* prevent overlap */
+    margin-bottom: 50px;
+}
+
+/* Individual Certificate Card */
+.certificate {
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* Hover effect */
+.certificate:hover {
+    transform: scale(1.03);
+}
+
+/* Image Styling */
+.certificate img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+}
+
+/* Optional zoom on image hover */
+.certificate:hover img {
+    transform: scale(1.05);
+}
+
+/* Certificate Title */
+.certificate h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0 5px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Certificate Description */
+.certificate p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .certificates-container,
+    .certificates-container-second-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .certificates-container,
+    .certificates-container-second-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .certificates-container,
+    .certificates-container-second-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .certificates-grid h2 {
+        font-size: 2rem;
+    }
+
+    .certificate {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+/* Publications Section Title */
+.publications-section h2 {
+    font-size: 2rem;
+    font-family: 'Manrope', sans-serif; /* Consistent font */
+    color: #EC5C39; /* Orange color for consistency */
+    margin-bottom: 30px; /* Space between title and first publication */
+    text-align: center; /* Center the title */
+}
+/* Publications Container */
+.publications-container {
+    display: grid;
+    grid-template-columns: repeat repeat(2, 1fr); /*(auto-fill, minmax(300px, 1fr)); /* Dynamic grid for responsiveness */
+    gap: 30px; /* More space between cards */
+    padding: 40px 60px; /* Added padding on the sides for better alignment */
+    justify-items: center;
+    background-color: #f4f4f3;
+    margin: 0 auto; /* Centers the container */
+    max-width: 1200px; /* Limits the max width for large screens */
+}
+
+/* Individual Publication */
+.publication {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px; /* Limits card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Cards */
+.publication:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Publication Header */
+.publication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.publication-header h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.toggle {
+    background-color: #EC5C39;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.toggle:hover {
+    background-color: #e55b00;
+    transform: rotate(45deg); /* Rotate for a dynamic effect */
+}
+
+/* Publication Details */
+.publication-details {
+    display: none;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.publication-details p {
+    color: #555;
+}
+
+.publication-details a {
+    color: #EC5C39;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+.view-pdf-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.view-pdf-btn:hover {
+    background-color: #45a049;
+}
+
+/* When the publication is opened */
+.publication.open .publication-details {
+    display: block;
+}
+/*extracurriculars*/
+#extracurriculars {
+    padding: 40px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 28px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.extracurricular-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.extracurricular-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px); /* 4 items per row with margin */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+}
+
+.extracurricular-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.extracurricular-item h3 {
+    margin: 0 0 10px;
+    color: #333; /* Darker text for titles */
+}
+
+.extracurricular-item p {
+    color: #666; /* Softer color for descriptions */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .extracurricular-item {
+        width: calc(50% - 40px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .extracurricular-item {
+        width: 100%; /* 1 item per row */
+    }
+}
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #EC5C39; 
+    color: white;
+  }
+  
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url('VISP1.jpeg'); /* <-- Make sure your image is inside 'images' folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .contact-me h2 {
+    color: #ffffff;
+  }
+  
+  .contact-info h3 {
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .contact-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .icon-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-link i {
+    margin-right: 10px;
+  }
+  
+  .contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }

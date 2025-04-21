@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#project">Projects</a></li>
+      <!--li><a href="#work-experience">Work Experience</a></li-->
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <!--li><a href="#extracurriculars">Extracurriculars</a></li-->
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- First Section: Hero Section -->
+<section id="about" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="intro">
+            <h1>
+                <span class="name-top">VISMAYE</span><br>
+                <span class="name-bottom">MADHUSUDHAN</span>
+              </h1>
+              <p class="subtitle">Turning Data Into Decisions | ML & AI Enthusiast | Cloud-Native Problem Solver</p>
+
+              <br><br><br><br>
+              
+              <p>
+              Hi, I’m <strong>Vismaye Madhusudhan</strong> — a passionate Data Scientist with around 4 years of hands-on experience blending machine learning, deep learning, and big data to create intelligent, scalable solutions. With a perfect 4.0 GPA in my Data Science Master's and a proven track record in deploying models on cloud platforms like AWS, GCP, and Azure, I bring both academic excellence and real-world expertise. Whether it's building MLOps pipelines, uncovering insights from unstructured data, or crafting real-time analytics systems, I love transforming complex challenges into elegant data-driven solutions.
+              </p>
+              
+          <!-- Resume Section -->
+          <div class="resume-section">
+            
+            <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" class="btn" target="_blank">RESUME</a>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="photos/passport.JPEG" alt="Your Photo">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Quote Section -->
+<section id="quote" class="quote-section">
+    <div class="quote-container">
+      <h3 class="quote-title">Transforming Systems into Smart Solutions with AI & Data</h3>
+      <p class="quote-paragraph">
+      Bridging engineering precision with data intelligence to craft scalable, impactful innovations.
+      </p>
+      </div>
+</section>
+
+<!-- Projects Section -->
+<div id="project" class="projects-section">
+    <h2>PROJECTS</h2>
+    <div class="projects-container">
+      <!-- Project Card 1 -->
+     <!-- Project Card 1 - Traffic on Texas Highways -->
+      <div class="project-card">
+        <div class="card">
+        <div class="card-front">
+        <h3>Traffic on Texas Highways</h3>
+        <p>Big data project analyzing real-time traffic using streaming pipelines and cloud analytics.</p>
+       </div>
+     <div class="card-back">
+      <p>This project focused on analyzing Texas highway traffic patterns by integrating real-time data streams using REST APIs and Apache Kafka. The datasets were cleaned and refined using OpenRefine, significantly improving data reliability. Leveraging Apache Spark and Hadoop on Google Cloud Platform, the project assessed the impact of weather on traffic flow and enhanced model efficiency by 25%. SQL queries and data pipelines were optimized to reduce processing time by 20%. The insights were visualized through interactive Tableau dashboards, enabling transportation authorities to make informed decisions and reduce peak-hour congestion by 15%.</p>
+    </div>
+  </div>
+</div>
+
+      
+      <!-- Project Card 2 -->
+      <!-- Project Card 2 - Crime Chronicles: Tracing Trends in USA Crime -->
+<div class="project-card">
+  <div class="card">
+    <div class="card-front">
+      <h3>Crime Chronicles: Tracing Trends in USA Crime</h3>
+      <p>Interactive data storytelling with Tableau to uncover U.S. crime trends and regional patterns.</p>
+    </div>
+    <div class="card-back">
+      <p>This project explored crime trends across the United States using an interactive Tableau dashboard. By integrating charts, KPIs, and custom filters, it enabled users to navigate crime data by state, year, and category. Data cleaning was performed in Tableau Prep, involving format normalization, removal of duplicates, and grouping of categorical fields, which improved data consistency by 30%. The dashboard utilized Tableau’s geospatial mapping tools to visualize crime hotspots, weapon usage, and regional death rates, providing actionable insights for both policy formulation and law enforcement strategies.</p>
+    </div>
+  </div>
+</div>
+
+      
+      <!-- Project Card 3 - Drug-Target Interaction Prediction with Deep Learning -->
+<div class="project-card">
+  <div class="card">
+    <div class="card-front">
+      <h3>Drug-Target Interaction Prediction</h3>
+      <p>Deep learning and cloud-based pipeline for scalable drug discovery analytics.</p>
+    </div>
+    <div class="card-back">
+      <p>This project aimed to accelerate drug discovery by predicting drug-target interactions using deep learning models built in PyTorch, achieving a 20% boost in predictive accuracy. Large-scale genomic and proteomic datasets were processed using Databricks to identify promising drug candidates. An end-to-end data pipeline was developed using Azure Data Factory and Snowflake for efficient data ingestion and storage. The model was deployed using Docker containers on Azure Cloud, reducing inference time by 30%. The solution also featured automated monitoring and logging for reproducibility, supporting its integration into clinical research environments.</p>
+    </div>
+  </div>
+</div>
+
+  
+      <!-- Project Card 4 - US Healthy Life Supplements 2024 -->
+<div class="project-card">
+  <div class="card">
+    <div class="card-front">
+      <h3>US Healthy Life Supplements 2024</h3>
+      <p>AI-driven forecasting and sentiment analysis for sales optimization in the health sector.</p>
+    </div>
+    <div class="card-back">
+      <p>This project focused on optimizing sales and customer engagement for a supplement company using machine learning and NLP techniques. Models for sales forecasting and pricing prediction were developed with 90% accuracy and an R² score of 0.99. Extensive data cleaning and exploratory data analysis (EDA) improved data reliability by 95%, while advanced feature engineering further enhanced prediction performance by 20%. Natural language processing (NLP) models were implemented for sentiment analysis and named entity recognition, reducing false positives by 25%. The entire solution was deployed on AWS SageMaker with 99.9% uptime and paired with a Power BI dashboard, leading to a 15% increase in customer satisfaction and improved inventory management.</p>
+    </div>
+  </div>
+</div>
+
+  
+      <!-- Project Card 5 - Coronary Artery Disease Prediction using Hybrid Machine Learning Models -->
+<div class="project-card">
+  <div class="card">
+    <div class="card-front">
+      <h3>Coronary Artery Disease Prediction</h3>
+      <p>Hybrid ensemble models for early CAD diagnosis using real-world clinical data.</p>
+    </div>
+    <div class="card-back">
+      <p>This project developed a predictive system for early detection of coronary artery disease using hybrid machine learning models. Multiple datasets from Mendeley, Kaggle, and UCI were consolidated, totaling 1,738 records with 12 clinical features. After rigorous data cleaning, hypothesis testing, and exploratory data analysis, advanced feature engineering and scaling were applied. Baseline performance was established with individual classifiers, followed by the implementation of ensemble techniques such as stacking and soft voting using models like Random Forest, XGBoost, LightGBM, and SVC. The hybrid models delivered superior results across metrics including accuracy, precision, recall, F1-score, and AUC-ROC, demonstrating strong potential for real-world healthcare applications.</p>
+    </div>
+  </div>
+</div>
+
+  
+      <!-- Project Card 6 -->
+      <!--div class="project-card">
+        <div class="card">
+          <div class="card-front">
+            <h3>Project Six</h3>
+            <p>Short description of Project Six.</p>
+          </div>
+          <div class="card-back">
+            <p>Full description of Project Six, including details about the technologies used and the challenges faced.</p>
+          </div>
+        </div>
+      </div-->
+    </div>
+  </div>
+
+<!--section id="work-experience" class="work-experience">
+    <h2>WORK EXPERIENCE</h2>
+    <div class="timeline">
+        <!-- Work Experience Entry 1 
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Associate professional Software Engineer, DXC Technology</h3>
+                <span>Bengaluru, India | July 2022 – July 2023</span>
+                <div class="job-description">
+                    <ul>
+                        <li>Ensured server and network integrity through daily operations, reducing downtime by 15%.</li>
+                        <li>Analyzed server data and managed patch updates, achieving 100% patch compliance.</li>
+                        <li>Resolved 30 IT support tickets weekly and assisted in Windows Server patch management, increasing system stability by 99%.</li>
+                        <li>Administered Symantec SEPM and Sophos antivirus solutions, decreasing malware incidents by 25%.</li>
+                        <li>Implemented Veeam Backup and Replication, managing enterprise backups with a 99.9% recovery success rate.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience Entry 2 
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Web Development Intern, OpusCDM</h3>
+                <span>Bengaluru, India | December 2021 – July 2022</span>
+                <div class="job-description">
+                    <ul>
+                        <li>Expertise in antivirus, backup, networking, and SQL, enhancing system efficiency by 20%.</li>
+                        <li>Managed hospital server backups and antivirus with Veeam, Symantec, and McAfee, achieving 100% data protection and reducing security incidents by 30%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience Entry 3 
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>The Sparks Foundation, Web Development Intern</h3>
+                <span>Bengaluru, India | July 2021 – August 2021</span>
+                <div class="job-description">
+                    <ul>
+                        <li>Created a website Payment Gateway Integration.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<section id='certifications' class= "certifications-grid">
+<div id="certifications" class="certificates-grid">
+  <h2>CERTIFICATIONS</h2>
+  
+  <div class="certificates-container">
+      <!-- Row 1 - 4 certificates -->
+      <div class="certificate">
+          <img src="google analytics.jpeg" alt="Certificate 1">
+          <h3>GOOGLE DATA ANALYTICS</h3>
+          <p>Google Data Analytics Certificate: Foundations of Data-Driven Decision Making.</p>
+      </div>
+      <div class="certificate">
+          <img src="udemy 1.jpeg" alt="Certificate 2">
+          <h3>Complete Data Science, ML, DL & NLP Certificate</h3>
+          <p>Complete Data Science & ML Bootcamp: Master Theory, Math & Projects in ML, DL, and NLP.</p>
+      </div>
+      <div class="certificate">
+          <img src="udemy 2.jpeg" alt="Certificate 3">
+          <h3>Learn Python with 20+ Real-World Projects</h3>
+          <p>Hands-on Python course covering fundamentals to advanced concepts through 20+ real-world projects.</p>
+      </div>
+      <!--div class="certificate">
+          <img src="certificate4.jpg" alt="Certificate 4">
+          <h3>Certificate Title 4</h3>
+          <p>Description of the certificate.</p>
+      </div>-->
+  </div> 
+
+  <!-- Row 2 - 4 certificates -->
+  <!--<div class="certificates-container-second-row">
+      <div class="certificate">
+          <img src="certificate5.jpg" alt="Certificate 5">
+          <h3>Certificate Title 5</h3>
+          <p>Description of the certificate.</p>
+      </div>
+      <div class="certificate">
+          <img src="certificate6.jpg" alt="Certificate 6">
+          <h3>Certificate Title 6</h3>
+          <p>Description of the certificate.</p>
+      </div>
+      <div class="certificate">
+          <img src="certificate7.jpg" alt="Certificate 7">
+          <h3>Certificate Title 7</h3>
+          <p>Description of the certificate.</p>
+      </div>
+      <div class="certificate">
+          <img src="certificate8.jpg" alt="Certificate 8">
+          <h3>Certificate Title 8</h3>
+          <p>Description of the certificate.</p>
+      </div>
+  </div>
+</div>
+</section>-->
+
+<!-- Publications Section -->
+<section id=publications class="publications-section">
+  <h2>PUBLICATIONS</h2> <!-- Title for the section -->
+  <div class="publications-container">
+      <!-- Publication 1 -->
+      <div class="publication">
+          <div class="publication-header">
+              <h3>
+                Soft Support: Specially Abled Communication </h3>
+              <button class="toggle">+</button>
+          </div>
+          <div class="publication-details">
+              <p>Assistive Mobile App for the Disabled Using Sensors
+                Presented a mobile application leveraging sensors to aid individuals with speech, vision, and hearing impairments in communication and daily tasks. Published in 2022 International Conference on Advanced Computing Technologies and Applications (ICACTA).</p>
+              <a href="https://ieeexplore.ieee.org/document/9753219" target="_blank">Link to Paper</a>
+              <!--button class="view-pdf-btn">View PDF</button-->
+          </div>
+      </div>
+      <!-- Publication 2 -->
+      <div class="publication">
+          <div class="publication-header">
+              <h3>
+                Credit Card Reader with Face Recognition Based on Webcam and Multimodal Biometrics</h3>
+              <button class="toggle">+</button>
+          </div>
+          <div class="publication-details">
+              <p>Secure Credit Card Transactions Using Face-Iris Biometric Authentication
+                Proposed a two-step verification system using face and iris recognition for secure credit card transactions via webcam. Enhances safety by integrating multimodal biometrics to overcome limitations of single-mode authentication.</p>
+              <a href="https://ijsrcseit.com/home/issue/view/article.php?id=CSEIT2031112" target="_blank">Link to Paper</a>
+              <!--button class="view-pdf-btn">View PDF</button-->
+          </div>
+      </div>
+      <!-- Publication 3 -->
+      <!--div class="publication">
+          <div class="publication-header">
+              <h3>Paper Title 3</h3>
+              <button class="toggle">+</button>
+          </div>
+          <div class="publication-details">
+              <p>Description of the paper goes here.</p>
+              <a href="https://example.com" target="_blank">Link to Paper</a>
+              <button class="view-pdf-btn">View PDF</button>
+          </div>
+      </div-->
+  </div>
+</section>
+<!--section id="extracurriculars">
+  <h2>Extracurriculars</h2>
+  <div class="extracurricular-container">
+      <div class="extracurricular-item">
+          <h3>Extracurricular Activity 1</h3>
+          <p>Description of Activity 1, highlighting skills and achievements.</p>
+      </div>
+      <div class="extracurricular-item">
+          <h3>Extracurricular Activity 2</h3>
+          <p>Description of Activity 2, highlighting skills and achievements.</p>
+      </div>
+      <div class="extracurricular-item">
+          <h3>Extracurricular Activity 3</h3>
+          <p>Description of Activity 3, highlighting skills and achievements.</p>
+      </div>
+      <div class="extracurricular-item">
+          <h3>Extracurricular Activity 4</h3>
+          <p>Description of Activity 4, highlighting skills and achievements.</p>
+      </div>
+  </div>
+</section-->
+<section id="contact" class="contact-me">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    <div class="profile-picture"></div>
+    <div class="contact-info">
+      <h3>Get in Touch!</h3>
+      <p>Feel free to reach out through any of the following platforms:</p>
+      <div class="contact-methods">
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/your-linkedin-username" class="icon-link" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/your-github-username" class="icon-link" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="tel:+12345678901" class="icon-link">
+            <i class="fas fa-phone-alt"></i> +1(940)977-1510
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="mailto:your-email@example.com" class="icon-link">
+            <i class="fas fa-envelope"></i> vismayemadhusudhan@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--section id="contact" class="contact-me">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+      <div class="profile-picture"></div>
+      <div class="contact-info">
+          <h3>Get in Touch!</h3>
+          <p>Feel free to reach out through any of the following platforms:</p>
+          <div class="contact-methods">
+              <div class="contact-item">
+                  <a href="your-linkedin-url" class="icon-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </div>
+              <div class="contact-item">
+                  <a href="your-github-url" class="icon-link"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+              <div class="contact-item">
+                  <a href="tel:+12345678901" class="icon-link"><i class="fas fa-phone-alt"></i> +1 234 567 8901</a>
+              </div>
+              <div class="contact-item">
+                  <a href="mailto:your-email@example.com" class="icon-link"><i class="fas fa-envelope"></i> your-email@example.com</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section-->
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
